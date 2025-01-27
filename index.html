@@ -9,58 +9,81 @@
 </head>
 
 <body>
-    <nav>
-        <a href="/" style="text-decoration: none; color: #111827; font-weight: 600; font-size: 1.25rem;">Hotel Logo</a>
-        <div class="nav-links">
-            <a href="/about">About</a>
-            <a href="/newsletter">Newsletter</a>
-            <a href="/rooms">Rooms</a>
-            <a href="/services">Services</a>
-            <a href="/dining">Dining</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-links-left">
+                    <a href="#" class="nav-link active">Home</a>
+                    <a href="#" class="nav-link">About</a>
+                    <a href="#" class="nav-link">Newsletter</a>
+                </div>
+    
+                <div class="logo">
+                    <img src="./images/Logo.png" alt="Hotel Logo">
+                </div>
+    
+                <div class="nav-links-right">
+                    <a href="#" class="nav-link">Rooms</a>
+                    <a href="#" class="nav-link">Services</a>
+                    <a href="#" class="nav-link">Pricing</a>
+                </div>
+            </div>
         </div>
     </nav>
+    
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Discover Extraordinary<br>
+                Comfort in Hotels
+            </h1>
+    
+            <div class="hero-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
 
-    <div class="hero">
-        <img src="hero.jpg"
-            alt="Luxury beachfront hotel">
-        <h1>Discover Extraordinary<br>Comfort in Hotels</h1>
-    </div>
-
-    <div class="services">
+    <div class="services-grid">
         <div class="service-card">
-            <img src="placeholder.jpg" alt="Hotel room">
-            <div class="overlay">
-                <span>Rooms</span>
+            <img src="./images/rooms.jpg" alt="Luxurious hotel room with wooden flooring">
+            <div class="service-overlay">
+                <h2 class="service-title">Rooms</h2>
             </div>
         </div>
+    
         <div class="service-card">
-            <img src="placeholder.jpg" alt="Hotel dining">
-            <div class="overlay">
-                <span>Dining</span>
+            <img src="./images/dining.jpg"
+                alt="Elegant dining setup with plated dish">
+            <div class="service-overlay">
+                <h2 class="service-title">Dining</h2>
             </div>
         </div>
+    
         <div class="service-card">
-            <img src="placeholder.jpg" alt="Conference room">
-            <div class="overlay">
-                <span>Conference & Meetings</span>
+            <img src="./images/metting.jpg"
+                alt="Modern conference room">
+            <div class="service-overlay">
+                <h2 class="service-title">Conferences & Meetings</h2>
             </div>
         </div>
+    
         <div class="service-card">
-            <img src="placeholder.jpg" alt="Room service">
-            <div class="overlay">
-                <span>Room Service</span>
+            <img src="./images/gym.jpg"
+                alt="Gym facilities with weight equipment">
+            <div class="service-overlay">
+                <h2 class="service-title">Service & Facilities</h2>
             </div>
         </div>
+    
         <div class="service-card">
-            <img src="placeholder.jpg" alt="Hotel facilities">
-            <div class="overlay">
-                <span>Service & Facilities</span>
-            </div>
-        </div>
-        <div class="service-card">
-            <img src="placeholder.jpg" alt="Wedding venue">
-            <div class="overlay">
-                <span>Wedding Package</span>
+            <img src="./images/weeding.jpg"
+                alt="Beach wedding celebration">
+            <div class="service-overlay">
+                <h2 class="service-title">Wedding Package</h2>
             </div>
         </div>
     </div>
@@ -80,36 +103,76 @@
             </div>
     
             <div class="offers-grid">
-                <div class="offer-card">
-                    <img src="placeholder.jpg" alt="Honeymoon suite">
-                    <div class="offer-content">
-                        <h3>Honeymoon</h3>
-                        <div class="price">
-                            <span class="price-amount">$699</span>
-                            <span class="price-suffix">/pkg</span>
+
+                <div class="card">
+                    <img src="./images/people.jpg" alt="Honeymoon suite with bed and armchair" class="card-image">
+                    <div class="room-label">Room</div>
+                    <div class="card-header">
+                        <h2 class="room-title">Honeymoon</h2>
+                        <div class="capacity">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                            <span>2</span>
                         </div>
                     </div>
-                </div>
-                <div class="offer-card">
-                    <img src="placeholder.jpg" alt="Meeting room">
-                    <div class="offer-content">
-                        <h3>Meetings</h3>
-                        <div class="price">
-                            <span class="price-amount">$999</span>
-                            <span class="price-suffix">/pkg</span>
-                        </div>
+                    <div class="description">
+                        Indulge in a Memorable One-Time Romantic Dinner for Two
+                    </div>
+                    <div class="price">
+                        <span class="amount">$699</span>
+                        <span class="rate">/night</span>
                     </div>
                 </div>
-                <div class="offer-card">
-                    <img src="placeholder.jpg" alt="Romantic dining">
-                    <div class="offer-content">
-                        <h3>Romantic Dining</h3>
-                        <div class="price">
-                            <span class="price-amount">$499</span>
-                            <span class="price-suffix">/pkg</span>
+
+                <div class="card">
+                    <img src="./images/room.jpg" alt="Honeymoon suite with bed and armchair" class="card-image">
+                    <div class="room-label">Room</div>
+                    <div class="card-header">
+                        <h2 class="room-title">Meetings</h2>
+                        <div class="capacity">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                            <span>99</span>
                         </div>
                     </div>
+                    <div class="description">
+                        Experience an Exclusively Private Environment to Boost Your Productivity
+                    </div>
+                    <div class="price">
+                        <span class="amount">$999</span>
+                        <span class="rate">/night</span>
+                    </div>
                 </div>
+
+                <div class="card">
+                    <img src="./images/table.jpg" alt="Honeymoon suite with bed and armchair" class="card-image">
+                    <div class="room-label">Room</div>
+                    <div class="card-header">
+                        <h2 class="room-title">Romantic Dining</h2>
+                        <div class="capacity">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                            </svg>
+                            <span>2</span>
+                        </div>
+                    </div>
+                    <div class="description">
+                        Indulge in a Memorable One-Time Romantic Dinner for Two
+                    </div>
+                    <div class="price">
+                        <span class="amount">$499</span>
+                        <span class="rate">/table</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
